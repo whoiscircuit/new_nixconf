@@ -5,14 +5,19 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    iozevka.url = "github:whoiscircuit/iozevka";
+    iozevka.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager }: 
+  outputs = { self, nixpkgs, home-manager,... }@inputs: 
   let
     system = "x86_64-linux";
+    overlays = [
+      inputs.iozevka.overlays.default
+    ];
     pkgs = import nixpkgs {
-      inherit system;
-      config.allow-unfree = true;
+      inherit system overlays;
+      config.allowUnfree = true;
     };
   in {
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {

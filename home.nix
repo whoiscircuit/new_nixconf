@@ -3,10 +3,25 @@
   home.username = "user";
   home.homeDirectory = "/home/user";
   home.stateVersion = "24.05";
-
+ 
   home.packages = with pkgs; [
     git
     stow
+    htop
+    kitty
+    difftastic
+    alacritty
+    wezterm
+    foot
+    vscode
+    rxvt-unicode-emoji
+    vazir-code-font
+    vazir-fonts
+    iozevka-nerd
+    iozevka-mono
+    noto-fonts
+    noto-fonts-color-emoji
+    nerd-fonts.symbols-only
   ];
 
   programs.home-manager.enable = true;

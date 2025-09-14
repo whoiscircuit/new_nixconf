@@ -10,6 +10,28 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  fonts.fontconfig.enable = true;
+  fonts.fontconfig.includeUserConf = true;
+  fonts.fontconfig.defaultFonts = {
+    emoji = [];
+    serif = [];
+    sansSerif = [];
+    monospace = [];
+  };
+  
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      animation = "matrix";
+      auth_fails = 5;
+      hide_version_string = true;
+      numlock = true;            
+      session_log = ".cache/ly-session.log";
+    };
+  };
+  programs.sway.enable = true;
+  programs.hyprland.enable = true;
+
   networking.hostName = "vm"; # Define your hostname.
 
   # Enable networking
@@ -26,11 +48,7 @@
     isNormalUser = true;
     description = "user";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
-
-  environment.systemPackages = with pkgs; [
-  ];
 
   system.stateVersion = "25.05"; # DON'T CHANGE
 
