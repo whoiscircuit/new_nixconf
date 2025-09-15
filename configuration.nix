@@ -44,6 +44,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   programs.zsh.enable = true;
+  programs.zsh.enableGlobalCompInit = false;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.user = {

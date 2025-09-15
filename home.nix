@@ -26,6 +26,7 @@
     firefox-esr
     dunst
     libnotify
+    tldr
   ];
 
   programs.home-manager.enable = true;
