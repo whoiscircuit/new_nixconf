@@ -22,6 +22,10 @@
     noto-fonts
     noto-fonts-color-emoji
     nerd-fonts.symbols-only
+    wofi
+    firefox-esr
+    dunst
+    libnotify
   ];
 
   programs.home-manager.enable = true;
