@@ -30,6 +30,7 @@
     bat
     pup
     jq
+    direnv
   ];
 
   programs.home-manager.enable = true;
