@@ -26,7 +26,7 @@
     firefox-esr
     dunst
     libnotify
-    tldr
+    tealdeer
   ];
 
   programs.home-manager.enable = true;
