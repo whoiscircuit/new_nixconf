@@ -27,6 +27,9 @@
     dunst
     libnotify
     tealdeer
+    bat
+    pup
+    jq
   ];
 
   programs.home-manager.enable = true;
