@@ -39,6 +39,7 @@
     lsd
     gtrash
     qrencode
+    python314
   ];
 
   programs.home-manager.enable = true;
