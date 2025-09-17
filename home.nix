@@ -31,6 +31,11 @@
     pup
     jq
     direnv
+    asciinema_3
+    sxiv
+    gifsicle
+    asciinema-agg
+    wl-clipboard
   ];
 
   programs.home-manager.enable = true;
