@@ -36,6 +36,9 @@
     gifsicle
     asciinema-agg
     wl-clipboard
+    lsd
+    gtrash
+    qrencode
   ];
 
   programs.home-manager.enable = true;
