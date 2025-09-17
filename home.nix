@@ -40,6 +40,7 @@
     gtrash
     qrencode
     python314
+    qmk
   ];
 
   programs.home-manager.enable = true;
