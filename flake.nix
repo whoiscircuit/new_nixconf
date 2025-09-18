@@ -7,6 +7,8 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     iozevka.url = "github:whoiscircuit/iozevka";
     iozevka.inputs.nixpkgs.follows = "nixpkgs";
+    dotfiles.url = "github:whoiscircuit/new_dotfiles";
+    dotfiles.flake = false;
   };
 
   outputs = { self, nixpkgs, home-manager,... }@inputs: 
@@ -27,6 +29,7 @@
     homeConfigurations.user = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
       modules = [ ./home.nix ];
+      extraSpecialArgs = {inherit inputs;};
     };
   };
 }

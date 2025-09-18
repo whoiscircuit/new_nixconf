@@ -1,4 +1,4 @@
-{config, pkgs, ... }:
+{config, pkgs, inputs, ... }:
 {
   home.username = "user";
   home.homeDirectory = "/home/user";
@@ -23,7 +23,6 @@
     noto-fonts-color-emoji
     nerd-fonts.symbols-only
     wofi
-    firefox-esr
     dunst
     libnotify
     tealdeer
@@ -42,6 +41,12 @@
     python314
     qmk
   ];
+
+  programs.firefox = {
+    enable = true;
+    package = pkgs.firefox-esr;
+    policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
+  };
 
   programs.home-manager.enable = true;
 }
