@@ -22,7 +22,7 @@
       config.allowUnfree = true;
     };
   in {
-    nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       inherit system pkgs;
       modules = [ ./configuration.nix ];
     };
