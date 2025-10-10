@@ -40,6 +40,7 @@
     qrencode
     python314
     qmk
+    gruvbox-material-gtk-theme
   ];
 
   programs.firefox = {
