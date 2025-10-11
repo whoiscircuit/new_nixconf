@@ -42,6 +42,7 @@
     qmk
     gruvbox-material-gtk-theme
     v2rayn
+    hyprcursor
   ];
 
   programs.firefox = {
