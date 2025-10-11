@@ -37,6 +37,13 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  networking.firewall = rec {
+    allowedTCPPortRanges = [ 
+      { from = 1714; to = 1764; } # kde-connect
+    ];
+    allowedUDPPortRanges = allowedTCPPortRanges;
+  };
+
   # Set your time zone.
   time.timeZone = "Asia/Tehran";
 

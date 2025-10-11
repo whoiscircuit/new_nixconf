@@ -46,9 +46,11 @@
 
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox;
+    package = pkgs.firefox-bin;
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
   };
+
+  services.kdeconnect.enable = true;
 
   programs.home-manager.enable = true;
 }
