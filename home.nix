@@ -41,11 +41,12 @@
     python314
     qmk
     gruvbox-material-gtk-theme
+    v2rayn
   ];
 
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-esr;
+    package = pkgs.firefox;
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
   };
 
