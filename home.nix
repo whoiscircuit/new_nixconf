@@ -53,6 +53,12 @@
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
   };
 
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
+
   services.kdeconnect.enable = true;
 
   programs.home-manager.enable = true;
