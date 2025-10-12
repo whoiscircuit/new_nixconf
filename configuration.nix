@@ -25,7 +25,7 @@
       animation = "matrix";
       auth_fails = 5;
       hide_version_string = true;
-      numlock = true;            
+      numlock = true;
       session_log = ".cache/ly-session.log";
     };
   };

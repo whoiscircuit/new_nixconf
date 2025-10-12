@@ -43,11 +43,13 @@
     gruvbox-material-gtk-theme
     v2rayn
     hyprcursor
+    qt6ct
+    vlc
   ];
 
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-bin;
+    package = pkgs.firefox;
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
   };
 
