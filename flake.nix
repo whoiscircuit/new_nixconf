@@ -9,6 +9,8 @@
     iozevka.inputs.nixpkgs.follows = "nixpkgs";
     dotfiles.url = "github:whoiscircuit/new_dotfiles";
     dotfiles.flake = false;
+    hidrosis.url = "github:whoiscircuit/daktylos?submodules=1";
+    hidrosis.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager,... }@inputs: 
@@ -16,6 +18,7 @@
     system = "x86_64-linux";
     overlays = [
       inputs.iozevka.overlays.default
+      inputs.hidrosis.overlays.default
     ];
     pkgs = import nixpkgs {
       inherit system overlays;

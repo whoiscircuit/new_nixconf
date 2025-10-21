@@ -16,6 +16,26 @@
         "type": "github"
       }
     },
+    "hidrosis": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761073126,
+        "narHash": "sha256-DymatLOYRzqppw14yXUtlpgX4XgvDOC+vdN1C6Rd4Sc=",
+        "owner": "whoiscircuit",
+        "repo": "daktylos",
+        "rev": "6256261f4d6b232ea4fcd38b5cf5040861cafbe8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "whoiscircuit",
+        "repo": "daktylos",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -75,6 +95,7 @@
     "root": {
       "inputs": {
         "dotfiles": "dotfiles",
+        "hidrosis": "hidrosis",
         "home-manager": "home-manager",
         "iozevka": "iozevka",
         "nixpkgs": "nixpkgs"
