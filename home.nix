@@ -45,6 +45,7 @@
     hyprcursor
     qt6ct
     vlc
+    bitwarden-desktop
   ];
 
   programs.firefox = {
