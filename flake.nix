@@ -9,7 +9,7 @@
     iozevka.inputs.nixpkgs.follows = "nixpkgs";
     dotfiles.url = "github:whoiscircuit/new_dotfiles";
     dotfiles.flake = false;
-    hidrosis.url = "github:whoiscircuit/daktylos?submodules=1";
+    hidrosis.url = "git+https://github.com/whoiscircuit/daktylos?submodules=1";
     hidrosis.inputs.nixpkgs.follows = "nixpkgs";
   };
 

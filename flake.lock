@@ -24,16 +24,18 @@
       },
       "locked": {
         "lastModified": 1761073126,
-        "narHash": "sha256-DymatLOYRzqppw14yXUtlpgX4XgvDOC+vdN1C6Rd4Sc=",
-        "owner": "whoiscircuit",
-        "repo": "daktylos",
+        "narHash": "sha256-X3n+0fO4Kb2t318kxcRD+sBTmN6o2GGpAYEplvZ+X7g=",
+        "ref": "refs/heads/main",
         "rev": "6256261f4d6b232ea4fcd38b5cf5040861cafbe8",
-        "type": "github"
+        "revCount": 124,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/whoiscircuit/daktylos"
       },
       "original": {
-        "owner": "whoiscircuit",
-        "repo": "daktylos",
-        "type": "github"
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/whoiscircuit/daktylos"
       }
     },
     "home-manager": {
