@@ -55,6 +55,8 @@
 
   hardware.keyboard.qmk.enable = true;
 
+  services.hidrosis.enable = true; # my custom integration for daktylos keyboard
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.user = {
     isNormalUser = true;

@@ -23,11 +23,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761073126,
-        "narHash": "sha256-X3n+0fO4Kb2t318kxcRD+sBTmN6o2GGpAYEplvZ+X7g=",
+        "lastModified": 1761116336,
+        "narHash": "sha256-DzwQgZx9WFCOuGmOfsc1BrUPB90qseErM3R0xaKmkrI=",
         "ref": "refs/heads/main",
-        "rev": "6256261f4d6b232ea4fcd38b5cf5040861cafbe8",
-        "revCount": 124,
+        "rev": "c4dfd423970be8b211035338078322f5ff85789f",
+        "revCount": 133,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/whoiscircuit/daktylos"

@@ -27,7 +27,10 @@
   in {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       inherit system pkgs;
-      modules = [ ./configuration.nix ];
+      modules = [
+        inputs.hidrosis.nixosModules.default
+        ./configuration.nix
+      ];
     };
     homeConfigurations.user = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
