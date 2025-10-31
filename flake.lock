@@ -3,11 +3,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1761216429,
-        "narHash": "sha256-iEq87KpLYlMEd74q3FDuWnznU47adyFeVhbpH+HZN/Y=",
+        "lastModified": 1761902098,
+        "narHash": "sha256-X/l6N9Km3dQA6yb8jUH2/cUu5cCan1/5JkjXSrjdsZI=",
         "owner": "whoiscircuit",
         "repo": "new_dotfiles",
-        "rev": "16503c18578e6690bb7063005b9b58e180446f15",
+        "rev": "4ed3322401affdb05e7b36d70344cdfe4e47ad3c",
         "type": "github"
       },
       "original": {
