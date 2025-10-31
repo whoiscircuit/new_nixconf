@@ -3,11 +3,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1761902098,
-        "narHash": "sha256-X/l6N9Km3dQA6yb8jUH2/cUu5cCan1/5JkjXSrjdsZI=",
+        "lastModified": 1761912633,
+        "narHash": "sha256-KAqiU5+/OH+DAlTJXJZXyf00EymQj+f6mFP86NUKR6E=",
         "owner": "whoiscircuit",
         "repo": "new_dotfiles",
-        "rev": "4ed3322401affdb05e7b36d70344cdfe4e47ad3c",
+        "rev": "c0b71b500bdedaf41545f913ccac39c9bc57e9b8",
         "type": "github"
       },
       "original": {
@@ -23,11 +23,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761325307,
-        "narHash": "sha256-QrWgPDCxDqo+5Pncwbr2xdNz/1CY8WndI4Z20pwGFSk=",
+        "lastModified": 1761909226,
+        "narHash": "sha256-GMDw5iRwK5fgNJvpIWq8GXXSssIMOIGdQZGTNHkkts0=",
         "ref": "refs/heads/main",
-        "rev": "f0a1d6956346074d8d9f143ead725363255d9259",
-        "revCount": 136,
+        "rev": "a07b41fff86d073dafe642e12a061e3c9eb147ec",
+        "revCount": 153,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/whoiscircuit/daktylos"
@@ -45,15 +45,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1760662441,
-        "narHash": "sha256-mlDqR1Ntgs9uYYEAUR1IhamKBO0lxoNS4zGLzEZaY0A=",
+        "lastModified": 1758463745,
+        "narHash": "sha256-uhzsV0Q0I9j2y/rfweWeGif5AWe0MGrgZ/3TjpDYdGA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "722792af097dff5790f1a66d271a47759f477755",
+        "rev": "3b955f5f0a942f9f60cdc9cacb7844335d0f21c3",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
+        "ref": "release-25.05",
         "repo": "home-manager",
         "type": "github"
       }
@@ -80,11 +81,27 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1760524057,
-        "narHash": "sha256-EVAqOteLBFmd7pKkb0+FIUyzTF61VKi7YmvP1tw4nEw=",
+        "lastModified": 1761597516,
+        "narHash": "sha256-wxX7u6D2rpkJLWkZ2E932SIvDJW8+ON/0Yy8+a5vsDU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+        "rev": "daf6dc47aa4b44791372d6139ab7b25269184d55",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-25.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1761672384,
+        "narHash": "sha256-o9KF3DJL7g7iYMZq9SWgfS1BFlNbsm6xplRjVlOCkXI=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "08dacfca559e1d7da38f3cf05f1f45ee9bfd213c",
         "type": "github"
       },
       "original": {
@@ -100,7 +117,8 @@
         "hidrosis": "hidrosis",
         "home-manager": "home-manager",
         "iozevka": "iozevka",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-unstable": "nixpkgs-unstable"
       }
     }
   },
