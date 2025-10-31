@@ -18,6 +18,8 @@
     sansSerif = [];
     monospace = [];
   };
+
+  systemd.user.units."hidrosis.service".enable = true;
   
   services.displayManager.ly = {
     enable = true;
@@ -29,6 +31,14 @@
       session_log = ".cache/ly-session.log";
     };
   };
+
+  services.printing.enable = true;
+  services.printing.drivers = with pkgs; [ hplipWithPlugin foo2zjs ];
+
+  environment.systemPackages = with pkgs; [
+    hplipWithPlugin
+  ];
+
   programs.sway.enable = true;
   programs.hyprland.enable = true;
 

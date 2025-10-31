@@ -46,6 +46,7 @@
     qt6ct
     vlc
     bitwarden-desktop
+    unzip
   ];
 
   programs.firefox = {
