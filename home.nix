@@ -1,4 +1,4 @@
-{config, pkgs, inputs, ... }:
+{config, pkgs, inputs, unstable, ... }:
 {
   home.username = "user";
   home.homeDirectory = "/home/user";
@@ -8,7 +8,7 @@
     git
     stow
     htop
-    kitty
+    unstable.kitty
     difftastic
     alacritty
     wezterm
