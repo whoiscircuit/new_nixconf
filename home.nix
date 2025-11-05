@@ -47,6 +47,7 @@
     vlc
     bitwarden-desktop
     unzip
+    emacs
   ];
 
   programs.firefox = {

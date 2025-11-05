@@ -41,7 +41,6 @@
 
   programs.sway.enable = true;
   programs.hyprland.enable = true;
-
   networking.hostName = "vm"; # Define your hostname.
 
   # Enable networking
