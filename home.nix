@@ -49,7 +49,7 @@
     unzip
     emacs
     apple-emoji-nix
-    tmux
+    ashell
   ];
 
   programs.firefox = {
