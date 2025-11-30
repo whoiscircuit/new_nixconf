@@ -48,11 +48,13 @@
     bitwarden-desktop
     unzip
     emacs
+    apple-emoji-nix
+    tmux
   ];
 
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox;
+    package = unstable.firefox;
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
   };
 

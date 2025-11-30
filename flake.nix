@@ -12,6 +12,8 @@
     dotfiles.flake = false;
     hidrosis.url = "git+https://github.com/whoiscircuit/daktylos?submodules=1";
     hidrosis.inputs.nixpkgs.follows = "nixpkgs";
+    apple-emoji-nix.url = "github:whoiscircuit/apple-emoji-nix";
+    apple-emoji-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, home-manager,... }@inputs: 
@@ -20,6 +22,7 @@
     overlays = [
       inputs.iozevka.overlays.default
       inputs.hidrosis.overlays.default
+      inputs.apple-emoji-nix.overlays.default
     ];
     pkgs = import nixpkgs {
       inherit system overlays;

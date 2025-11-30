@@ -1,5 +1,38 @@
 {
   "nodes": {
+    "apple-emoji-nix": {
+      "inputs": {
+        "apple_color_emoji_font": "apple_color_emoji_font",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1764432175,
+        "narHash": "sha256-LDyOpEQZ48AtQEVsPB9qRBJUAZA7tPRAE2G2RSLL/lg=",
+        "owner": "whoiscircuit",
+        "repo": "apple-emoji-nix",
+        "rev": "cb703678eacb0ca3dabbfba13d96de3b9e29a9b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "whoiscircuit",
+        "repo": "apple-emoji-nix",
+        "type": "github"
+      }
+    },
+    "apple_color_emoji_font": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-WYeZr4ESHQ4fKCmSR/WdCLsbp9Ik/czR4OmW8veGgv0=",
+        "type": "file",
+        "url": "https://github.com/samuelngs/apple-emoji-linux/releases/latest/download/AppleColorEmoji.ttf"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/samuelngs/apple-emoji-linux/releases/latest/download/AppleColorEmoji.ttf"
+      }
+    },
     "dotfiles": {
       "flake": false,
       "locked": {
@@ -113,6 +146,7 @@
     },
     "root": {
       "inputs": {
+        "apple-emoji-nix": "apple-emoji-nix",
         "dotfiles": "dotfiles",
         "hidrosis": "hidrosis",
         "home-manager": "home-manager",
