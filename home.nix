@@ -19,6 +19,7 @@
     vazir-fonts
     iozevka-nerd
     iozevka-mono
+    iozevka-quasi
     noto-fonts
     noto-fonts-color-emoji
     nerd-fonts.symbols-only
