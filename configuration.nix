@@ -20,6 +20,9 @@
   };
 
   systemd.user.units."hidrosis.service".enable = true;
+
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
   
   services.displayManager.ly = {
     enable = true;

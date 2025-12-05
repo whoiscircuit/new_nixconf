@@ -10,18 +10,13 @@
     htop
     unstable.kitty
     difftastic
-    alacritty
-    wezterm
-    foot
     vscode
-    rxvt-unicode-emoji
     vazir-code-font
     vazir-fonts
     iozevka-nerd
     iozevka-mono
     iozevka-quasi
     noto-fonts
-    noto-fonts-color-emoji
     nerd-fonts.symbols-only
     wofi
     dunst
@@ -44,7 +39,6 @@
     gruvbox-material-gtk-theme
     v2rayn
     hyprcursor
-    qt6ct
     vlc
     bitwarden-desktop
     unzip
@@ -52,6 +46,7 @@
     apple-emoji-nix
     ashell
     hyprpaper
+    zed-editor
   ];
 
   programs.firefox = {
