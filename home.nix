@@ -51,6 +51,7 @@
     emacs
     apple-emoji-nix
     ashell
+    hyprpaper
   ];
 
   programs.firefox = {
