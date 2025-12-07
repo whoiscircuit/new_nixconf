@@ -57,7 +57,7 @@
     enable = true;
     package = unstable.firefox;
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
-    nativeMessaginHosts = with pkgs; [
+    nativeMessagingHosts = with pkgs; [
       tridactyl-native
     ];
   };
