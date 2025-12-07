@@ -36,11 +36,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1764917407,
-        "narHash": "sha256-9iUO/k5vBuoWhMoPRNR3h/S/B0wj+iWWtwUvvszpHa4=",
+        "lastModified": 1765122884,
+        "narHash": "sha256-2HJ9IUQvtV1tHAFYQCNaUbLPZGTJPiAcws1YF63p0dc=",
         "owner": "whoiscircuit",
         "repo": "new_dotfiles",
-        "rev": "3ea32c86d24dbf4e48516fd317e0d462fcdd7aec",
+        "rev": "f18d657ad290b689cbfed50f9683d3cb608a5111",
         "type": "github"
       },
       "original": {

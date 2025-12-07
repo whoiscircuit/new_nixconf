@@ -3,6 +3,7 @@
   home.username = "user";
   home.homeDirectory = "/home/user";
   home.stateVersion = "24.05";
+
  
   home.packages = with pkgs; [
     git
@@ -47,12 +48,18 @@
     ashell
     hyprpaper
     zed-editor
+    xfce.thunar
+    samba4Full
+    python313Packages.avahi
   ];
 
   programs.firefox = {
     enable = true;
     package = unstable.firefox;
     policies = (builtins.fromJSON (builtins.readFile "${inputs.dotfiles.outPath}/.config/firefox/policies.json")).policies;
+    nativeMessaginHosts = with pkgs; [
+      tridactyl-native
+    ];
   };
 
   dconf.settings = {
