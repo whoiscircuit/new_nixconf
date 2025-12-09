@@ -50,7 +50,7 @@
     zed-editor
     xfce.thunar
     samba4Full
-    python313Packages.avahi
+    emacs
   ];
 
   programs.firefox = {
