@@ -11,12 +11,14 @@
     htop
     unstable.kitty
     difftastic
-    vscode
+    unstable.vscode
     vazir-code-font
     vazir-fonts
     iozevka-nerd
     iozevka-mono
     iozevka-quasi
+    iozevka-code
+    iozevka-slabs
     noto-fonts
     nerd-fonts.symbols-only
     wofi
@@ -49,8 +51,10 @@
     hyprpaper
     zed-editor
     xfce.thunar
-    samba4Full
-    emacs
+    nautilus
+    bind
+    unrar
+    unstable.vscodium-fhs
   ];
 
   programs.firefox = {

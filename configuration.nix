@@ -19,6 +19,10 @@
     monospace = [];
   };
 
+  virtualisation.docker = {
+    enable = true;
+  };
+
   systemd.user.units."hidrosis.service".enable = true;
 
   hardware.bluetooth.enable = true;
@@ -43,6 +47,7 @@
   ];
 
   programs.sway.enable = true;
+  services.gvfs.enable = true;
   programs.hyprland.enable = true;
   networking.hostName = "vm"; # Define your hostname.
 
@@ -73,7 +78,7 @@
   users.users.user = {
     isNormalUser = true;
     description = "user";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
 
